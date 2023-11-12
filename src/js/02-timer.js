@@ -72,9 +72,9 @@ flatpickr('.data-time', {
   enableTime: true,
   dateFormat: 'Y-m-d H:i',
   onChange: function (selectedDates, dateStr, instance) {
-    now = Date.now();
+   let now = Date.now();
 
-    selected = selectedDates[0];
+   let selected = selectedDates[0];
 
     if (now >= selected) {
       Notify.failure('Please choose a date in the future');
